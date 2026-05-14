@@ -1,0 +1,12 @@
+node_modules/
+dist/
+*.tsbuildinfo
+coverage/
+.DS_Store
+*.log
+
+# Local agent state, should never be committed
+.modex/
+
+# Pre-publish local install of @modex/core (see README "Local development")
+*.tgz
