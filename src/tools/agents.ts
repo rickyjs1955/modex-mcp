@@ -1,4 +1,4 @@
-import { runAgentsCreate, runAgentsList } from '@mojax/core';
+import { runAgentsCreate, runAgentsList } from '@modexagents/core';
 import { z } from 'zod';
 
 import { captureStream, guard, textResult, type ToolResult } from './shared.js';

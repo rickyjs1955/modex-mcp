@@ -3,7 +3,7 @@ import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { describe, expect, it, vi } from 'vitest';
 
-import { createAgent, readChain, saveCredentials, verifyChain } from '@mojax/core';
+import { createAgent, readChain, saveCredentials, verifyChain } from '@modexagents/core';
 
 import { handleFeed, feedInputSchema } from '../src/tools/feed.js';
 import { handleAgentsCreate, handleAgentsList } from '../src/tools/agents.js';

@@ -1,6 +1,6 @@
 import { Writable } from 'node:stream';
 
-import { isUserFacingError } from '@mojax/core';
+import { isUserFacingError } from '@modexagents/core';
 
 // The shape an MCP tool handler must return.
 export interface ToolResult {

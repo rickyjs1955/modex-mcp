@@ -1,4 +1,4 @@
-import { runFeed, type FeedOptions } from '@mojax/core';
+import { runFeed, type FeedOptions } from '@modexagents/core';
 import { z } from 'zod';
 
 import { captureStream, guard, textResult, type ToolResult } from './shared.js';
