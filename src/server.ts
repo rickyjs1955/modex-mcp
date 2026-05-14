@@ -14,7 +14,7 @@ export const SERVER_NAME = 'modex-mcp';
 export const SERVER_VERSION = '0.1.0';
 
 // Build the MCP server with all five modex tools registered. Every tool
-// delegates straight to a @modex/core operation — this package holds the tool
+// delegates straight to a @mojax/core operation — this package holds the tool
 // schemas and the stdio plumbing, nothing else.
 export function buildServer(): McpServer {
   const server = new McpServer({ name: SERVER_NAME, version: SERVER_VERSION });

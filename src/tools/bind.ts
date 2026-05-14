@@ -1,4 +1,4 @@
-import { loadCredentials, runBind } from '@modex/core';
+import { loadCredentials, runBind } from '@mojax/core';
 import { z } from 'zod';
 
 import { captureStream, errorResult, guard, textResult, type ToolResult } from './shared.js';

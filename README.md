@@ -5,7 +5,7 @@ An [MCP](https://modelcontextprotocol.io) server that exposes the
 MCP hosts (Claude Code, Cursor, …).
 
 It is a thin wrapper: every tool delegates straight to
-[`@modex/core`](https://www.npmjs.com/package/@modex/core). The server holds the
+[`@mojax/core`](https://www.npmjs.com/package/@mojax/core). The server holds the
 tool schemas and the stdio plumbing — no business logic.
 
 ## Tools
@@ -38,24 +38,24 @@ Add to your MCP host config (e.g. Claude Code):
 ```json
 {
   "mcpServers": {
-    "modex": { "command": "npx", "args": ["-y", "@modex/mcp"] }
+    "modex": { "command": "npx", "args": ["-y", "@mojax/mcp"] }
   }
 }
 ```
 
 ## Local development
 
-This package depends on the **published** `@modex/core`. Before that package is
+This package depends on the **published** `@mojax/core`. Before that package is
 on npm, install it from a local tarball built in the `modex-cli` repo:
 
 ```sh
-# in modex-cli: pnpm --filter @modex/core pack  → modex-core-<version>.tgz
-npm install            # installs everything except @modex/core
-npm install ../modex-core-0.3.1.tgz --no-save   # local @modex/core
+# in modex-cli: pnpm --filter @mojax/core pack  → modex-core-<version>.tgz
+npm install            # installs everything except @mojax/core
+npm install ../modex-core-0.3.1.tgz --no-save   # local @mojax/core
 npm run build && npm test
 ```
 
-Once `@modex/core` is published, a plain `npm install` resolves it from the
+Once `@mojax/core` is published, a plain `npm install` resolves it from the
 registry.
 
 ## License

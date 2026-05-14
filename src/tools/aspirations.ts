@@ -1,4 +1,4 @@
-import { loadCredentials, runAspirationsAdd } from '@modex/core';
+import { loadCredentials, runAspirationsAdd } from '@mojax/core';
 import { z } from 'zod';
 
 import { captureStream, errorResult, guard, textResult, type ToolResult } from './shared.js';
